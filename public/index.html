@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+    <title>创意热店，让创意更简单</title>
+    <script type="text/javascript">
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?eb4b34c105a6c3ef976ae1ca2c8bcf5a";
+        hm.id ="baidu_tj"
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+
+
+       /*
+      * @ pwidth 设计稿的宽度
+      * @ prem 你要1rem比多少px  我的是1rem比100px
+      * */
+      (function (doc, win, pwidth, prem) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = clientWidth / pwidth * prem + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window, 1920, 100);
+      
+      document.oncontextmenu = function() {
+        return false;
+      }
+      // document.onkeydown = function() {
+      //   var e = window.event || arguments[0];
+      //   if (e.keyCode == 123) {
+      //       return false;
+      //   }
+      // }
+
+    </script>
+  </head>
+  <body ondragstart="return false">
+    <noscript>
+      <strong>We're sorry but design doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+
+
+
+    <!-- built files will be auto injected -->
+    <script>
+      var _mtac = {"senseQuery":1};
+      (function() {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500707425");
+        mta.setAttribute("cid", "500707426");
+        mta.id="tengxun"
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
+  </body>
+  <style type="text/css">
+    body,html{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    /*#app{
+      font-family: 'SiYuan'!important
+    }*/
+  </style>
+</html>
