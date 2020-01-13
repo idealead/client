@@ -19,13 +19,7 @@
 					<div class="design_list cards" v-for="(item, index) in filter_design_data" v-show="item.isLoaded">
 						<a :href="'http://ht.idealead.hbindex.com/html/dist/#/canvas?userType=client&user_id=' + author_id + '&tempId=' + item.id" target="_blank" @click="mtj_baidu('template','link',`toEditedTemplateId${item.id}`)">
 							<img :src="item.path" @load="design_img_load(index)">
-							<!-- <img :src="item.watermark_path" @load="design_img_load" v-show="item.watermark_path != undefined"> -->
-							<!-- <svg 
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							width="100%" height="1334px">
-								<image x="0px" y="0px" width="100%" height="1334px" :xlink:href="'data:img/png;base64,' + item.path"></image>
-							</svg> -->
+							
 						</a>
 						<!-- design_other_component S-->
 						<div class="design_block">
