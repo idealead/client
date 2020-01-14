@@ -34,6 +34,7 @@ module.exports = {
           .loader('url-loader')
           .tap(options => Object.assign(options, { limit: 50000 }))
 	}
+	// 甘凯测试冲突
 }
 
 
