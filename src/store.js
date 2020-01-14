@@ -37,7 +37,6 @@ export default new Vuex.Store({
           {id: 1, answer_t: '活力张扬', path: require('@/assets/answer/pic_1.png'), select: 0},
           {id: 2, answer_t: '温馨随和', path: require('@/assets/answer/pic_1.png'), select: 0},
           {id: 3, answer_t: '专业可靠', path: require('@/assets/answer/pic_1.png'), select: 0},
-          {id: 4, answer_t: '文化品位', path: require('@/assets/answer/pic_1.png'), select: 0},
         ],
         selectIndex: 0
       },

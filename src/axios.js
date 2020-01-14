@@ -4,10 +4,12 @@ import axios from 'axios'
 //将axios挂载在Vue扩展上
  Vue.prototype.axios=axios
 
+//在main.js设置全局的请求次数，请求的间隙
+// axios.defaults.retry = 4;
+// axios.defaults.retryDelay = 1000;
 
- //配置baseUrl
- // axios.defaults.baseURL = '/api'
- 
+// axios.default.shouldRetry = (error) => true // 重试条件，默认只要是错误都需要重试
+
  // 环境的切换
 if (process.env.NODE_ENV == 'development') {    
     axios.defaults.baseURL = '/api';
