@@ -5,7 +5,7 @@ module.exports = {
 	devServer: {
 	    open: true, //是否自动弹出浏览器页面
 	    host: "localhost",
-	    port: '80',
+	    port: '8080',
 	    https: false,
 	    hotOnly: false,
 	    proxy: {
@@ -34,7 +34,6 @@ module.exports = {
           .loader('url-loader')
           .tap(options => Object.assign(options, { limit: 50000 }))
 	}
-	// 甘凯测试冲突
 }
 
 
