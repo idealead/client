@@ -10,7 +10,7 @@ module.exports = {
 	    hotOnly: false,
 	    proxy: {
 		  '/api': {
-	        target: 'http://ht.idealead.hbindex.com', //API服务器的地址
+	        target: 'http://dev.cyrd.gdinsight.com', //API测试服务器的地址
 	        changeOrigin: true,
 	        pathRewrite: {'^/api': ''}
         }	

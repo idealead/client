@@ -1,4 +1,3 @@
-// import '@babel/polyfill'
 import Es6Promise from 'es6-promise'
 import Vue from 'vue'
 import App from './App.vue'
@@ -20,8 +19,6 @@ Es6Promise.polyfill()
 
 Vue.prototype.$material = Material.install
 Vue.prototype.$login = Login.install
-
-
 
 Vue.mixin(mixin)
 
@@ -65,34 +62,9 @@ requireComponent.keys().forEach(fileName => {
 
 })
 
-
-
-// const _hmt = _hmt || [];
-// window._hmt = _hmt; // 必须把_hmt挂载到window下，否则找不到
-// (function () {
-//   const hm = document.createElement('script');
-//   hm.src = "https://hm.baidu.com/hm.js?985bc068316cfaaf9fd355cdb326d338";
-//   const s = document.getElementsByTagName('script')[0];
-//   s.parentNode.insertBefore(hm, s);
-// })();
-
-
-// // 加入百度统计
-router.beforeEach((to, from, next) => {
-
-    if (to.path) {
-      if (_hmt) {      
-        // console.log(_hmt)
-        _hmt.push(['_trackPageview', '/#' + to.fullPath]);
-        }
-    }
-    next();
-
- 
-})
+// 腾讯统计
 router.afterEach( ( to, from, next ) => {
     setTimeout(()=>{
-
             var _mtac = {"senseQuery":1};
             (function() {
                 var mta = document.createElement("script");

@@ -10,9 +10,6 @@ import axios from 'axios'
 
 // axios.default.shouldRetry = (error) => true // 重试条件，默认只要是错误都需要重试
 
- //配置baseUrl
- // axios.defaults.baseURL = '/api'
- 
  // 环境的切换
 if (process.env.NODE_ENV == 'development') {    
     axios.defaults.baseURL = '/api';
