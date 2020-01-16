@@ -419,7 +419,7 @@
 	<transition appear appear-active-class="animated fadeIn">
 		<div class="header_w">
 			<!-- <div class="loadingFont font1 font2 font3 font4 font5 font6 font7 font8 font9 font10 font11 font12 font13 font14 font15 font16 font17 font18 font19 font20 font21 font22">字体加载</div> -->
-			<div class="loadingFont" :class="'font' + item" v-for="(item, index) in 60">字体加载</div>
+			<div class="loadingFont" :class="'font' + item" v-for="(item, index) in 60" :key="index">字体加载</div>
 			<img src="../assets/header/logo.png" class="web_logo" @click="backHome(); mtj_baidu('toHomePage','click','toHomePage')">
 			<div class="right_blobk">
 				<div class="user">
