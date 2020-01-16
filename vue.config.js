@@ -35,5 +35,6 @@ module.exports = {
           .tap(options => Object.assign(options, { limit: 50000 }))
 	}
 }
+// 测试加了权限能不能上传
 
 
